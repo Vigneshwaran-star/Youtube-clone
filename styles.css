@@ -285,8 +285,9 @@ overflow-x: hidden; */ */
 }
 .thumbnail-image:hover{
     scale: 1.5rem;
-    /* filter: blur(10%); */
-}
+    border: radius 0; 
+    filter: blur(10%);
+} 
 .channel-icon{
     margin-right: .75em;
     border-radius: 50%;
@@ -317,4 +318,10 @@ overflow-x: hidden; */ */
 .video-channel-name,
 .video-metadata{
     color: #555;
+}
+.video-section-title{
+    grid-column: 1/-1;
+    margin: -.5em 0;
+    display:flex ;
+    justify-content: space-between;
 }
