@@ -1,0 +1,221 @@
+.nav-bar{
+    position: relative;
+    display: flex;
+    /* flex-wrap:nowrap; */
+    column-gap: 20px;
+    position:sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    /* height: 60px; */
+    /* position: fixed; */
+    
+}
+/* #menu-check{} */
+.recommendations{
+    /* position:fixed; */
+    z-index: 500;
+    width:1000px;
+    /* position: relative; */
+    margin-top: 10px;
+    left: 300px;
+    display: flex;
+    gap: 5px;
+    position: sticky;
+    overflow: hidden;
+    top: 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.recommendations:first-child{
+    background-color: black;
+    color: #f6f6f6 ;
+}
+.recommendations span{
+    display: inline;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    gap: 10px;
+    /* padding: 10px; */
+    background-color:rgb(232, 229, 229) ;
+}
+.recommendations::-webkit-scrollbar{
+    border-radius: 1px;
+}
+#menu,#bell,#recorder,#profile,.logo-text{
+    padding: 11px;
+}
+#menu:hover,#bell:hover,#recorder:hover{
+   
+    border-radius: 50%;
+    background-color: rgb(201, 199, 199);
+    cursor: pointer;
+}
+.logo-text img,.logo-text span{
+display: inline-block;
+vertical-align: middle;
+}
+.toggle-btn {
+    position: fixed;
+    top: 55px;
+    display: flex;
+    flex-direction: column; /* The container stays vertical */
+    row-gap: 20px; /* Adds space between rows */
+    width: 200px;
+    height: 700px;
+    padding-right: 20px;
+    /* display: block; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: .002px solid black; */
+    scrollbar-width: thin;
+}
+.toggle-btn::-webkit-scrollbar {
+    width: 100px;
+  }
+  
+  .toggle-btn::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+  }
+  
+  .toggle-btn::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.toggle-btn img, .toggle-btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.toggle-btn div {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */
+    gap: 10px; /* Adds space between icon and text */
+}
+.toggle-btn hr {
+    width: 100%; /* Adjust the width as per your layout */
+    margin: 10px 0px;/* Center the line horizontally */
+    border: 1px solid lightgray; /* Optional: Styling for the line */
+}
+.nav-bar-right{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+}
+.nav-bar-center{
+    display: flex;
+    margin-left: 250px;
+    /* position: absolute; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    right: 250px;
+
+}
+.search{
+    position: relative;
+    padding: 11px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: .10px solid gray;
+    border-color: solid black;
+    padding-block:2px;
+    margin: 2px; 
+    transition: box-shadow .25s;
+    outline: 5px black;
+    background: #f6f6f6;
+    /* border: 1px solid black; Regular border */
+    /* box-shadow: 0 0 0 10px red; */
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(0, 0, 0 .75);
+}
+#search-bar{
+    width: max-content;
+}
+#search-icon{
+    /* justify-content: flex-start; */
+    cursor: pointer;
+    position:absolute;
+    right: 10px;
+}
+#mic{
+    height: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color:rgb(235, 233, 233);
+}
+#mic:hover{
+background-color: rgb(201, 199, 199);
+cursor: pointer;
+}
+
+#search-bar{
+    border: none;
+    outline: 0cap;
+    background: transparent;
+}
+.video-bottom-section{
+    border-radius: 50%;
+}
+.nav-bar img,.toggle-btn img{
+    height: 20px;
+    width: 20px;
+}
+#recoder
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 800px;
+    position: sticky;
+}
+
+#youtubelogo{
+    height: 25px;
+    width: 25px;
+    border: 20px;
+}
+
+
+ .vidoes{
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 140px;
+    left: 250px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+overflow-y:scroll ;
+overflow-x: hidden;
+}
+.vidoes::-webkit-scrollbar-button{
+    width: 20px;
+}
+.vidoes img{
+    height: 150px;
+    width: 250px;
+}
+.video-bottom-section img{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.video-bottom-section{
+    display: flex;
+}
+#search{
+    border-radius: 20px ;
+    height: 20px;
+    width: 300px;
+}
+.vidoes {
+    position:fixed;
+    margin-left: 50px; /* Push the video grid to the right of the sidebar */
+    width: calc(100% - 220px); /* Take the remaining space */
+    overflow-y: auto; /* Allow scrolling */
+    overflow-x: hidden;
+}
