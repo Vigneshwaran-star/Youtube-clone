@@ -1,3 +1,7 @@
+*,*::before,*::after{
+    /* box-sizing: border-box; */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 .nav-bar{
     position: relative;
     display: flex;
@@ -42,8 +46,12 @@
 .recommendations::-webkit-scrollbar{
     border-radius: 1px;
 }
-#menu,#bell,#recorder,#profile,.logo-text{
+#menu,#bell,#recorder,#profile{
     padding: 11px;
+}
+.logo-text{
+    padding-top: 11px;
+    /* margin-   : 100px; */
 }
 #menu:hover,#bell:hover,#recorder:hover{
    
@@ -204,7 +212,7 @@ cursor: pointer;
     position: absolute;
     top: 140px;
     left: 250px;
-display: grid;
+/* display: grid; */
 grid-template-columns: repeat(3,1fr);
 gap: 20px;
 overflow-y:scroll ;
@@ -224,6 +232,7 @@ overflow-x: hidden;
 }
 .video-bottom-section{
     display: flex;
+    align-items: flex-start;
 }
 #search{
     border-radius: 20px ;
@@ -237,4 +246,22 @@ overflow-x: hidden;
     overflow-y: scroll; /* Allow scrolling */
     overflow-x: hidden;
     scrollbar-width: thin;
+}
+.thumbnail::before{
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .84);
+    color: white;
+    /* right: 1px; */
+    /* bottom: 5px; */
+    border-radius: .3em;
+    padding: .1em .3em;
+    font: .9em;
+}
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 3rem 1rem;
+    margin: 0 1.5rem;
+    border-top: 4px solid #ccc;
 }
