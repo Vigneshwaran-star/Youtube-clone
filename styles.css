@@ -67,6 +67,12 @@ vertical-align: middle;
 .footer:hover{
     background-color: white;
 }
+.checkbox:not(:checked)~.toggle-btn .home,
+.checkbox:not(:checked)~.toggle-btn .shorts,
+.checkbox:not(:checked)~.toggle-btn .subscriptions
+{
+    display: block;
+}
 .toggle-btn {
     position: fixed;
     top: 55px;
@@ -228,6 +234,7 @@ overflow-x: hidden;
     position:fixed;
     margin-left: 50px; /* Push the video grid to the right of the sidebar */
     width: calc(100% - 220px); /* Take the remaining space */
-    overflow-y: auto; /* Allow scrolling */
+    overflow-y: scroll; /* Allow scrolling */
     overflow-x: hidden;
+    scrollbar-width: thin;
 }
