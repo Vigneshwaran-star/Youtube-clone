@@ -55,6 +55,15 @@
 display: inline-block;
 vertical-align: middle;
 }
+.menu-item:hover{
+    background-color: #efefef;
+    cursor: pointer;
+    
+}
+
+.footer:hover{
+    background-color: white;
+}
 .toggle-btn {
     position: fixed;
     top: 55px;
