@@ -184,9 +184,7 @@ cursor: pointer;
     outline: 0cap;
     background: transparent;
 }
-/* .video-bottom-section{
-    border-radius: 50%;
-} */
+
 .nav-bar img,.toggle-btn img{
     height: 20px;
     width: 20px;
@@ -206,30 +204,11 @@ cursor: pointer;
 }
 
 
- /* .vidoes{
-    width: 1000px;
-    height: 600px;
-    position: absolute;
-    top: 140px;
-    left: 250px;
-/* display: grid;
-grid-template-columns: repeat(3,1fr);
-gap: 20px;
-overflow-y:scroll ;
-overflow-x: hidden; */ */
-/* } */
+ 
 .vidoes::-webkit-scrollbar-button{
     width: 20px;
 }
-/* .vidoes img{
-    height: 150px;
-    width: 250px;
-} */
-/* .video-bottom-section img{
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-} */
+
 .video-bottom-section{
     display: flex;
     align-items: flex-start;
@@ -240,14 +219,16 @@ overflow-x: hidden; */ */
     height: 20px;
     width: 300px;
 }
-/* .vidoes {
-    position:fixed;
-    margin-left: 50px; /* Push the video grid to the right of the sidebar */
-    /* width: calc(100% - 220px); Take the remaining space */
-    /* overflow-y: scroll; Allow scrolling */
-    /* overflow-x: hidden; */
-    /* scrollbar-width: thin; */
-/* } */ 
+ .vidoes { 
+    position:relative;
+    width: 1000px;
+    height: 600px;
+    margin-left: 250px; /* Push the video grid to the right of the sidebar */
+    width: calc(100% - 220px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thick;
+} 
 .thumbnail::before{
     content: attr(data-duration);
     position: absolute;
@@ -341,5 +322,5 @@ overflow-x: hidden; */ */
     scale: 500px;
     filter: brightness(70%);
     border-radius: 0;
-    background-image: -o-linear-gradient(100%);
+
 }
