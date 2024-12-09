@@ -184,9 +184,9 @@ cursor: pointer;
     outline: 0cap;
     background: transparent;
 }
-.video-bottom-section{
+/* .video-bottom-section{
     border-radius: 50%;
-}
+} */
 .nav-bar img,.toggle-btn img{
     height: 20px;
     width: 20px;
@@ -206,18 +206,18 @@ cursor: pointer;
 }
 
 
- .vidoes{
+ /* .vidoes{
     width: 1000px;
     height: 600px;
     position: absolute;
     top: 140px;
     left: 250px;
-/* display: grid; */
+/* display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 20px;
 overflow-y:scroll ;
-overflow-x: hidden;
-}
+overflow-x: hidden; */ */
+/* } */
 .vidoes::-webkit-scrollbar-button{
     width: 20px;
 }
@@ -233,20 +233,21 @@ overflow-x: hidden;
 .video-bottom-section{
     display: flex;
     align-items: flex-start;
+    margin-top: 1rem;
 }
 #search{
     border-radius: 20px ;
     height: 20px;
     width: 300px;
 }
-.vidoes {
+/* .vidoes {
     position:fixed;
     margin-left: 50px; /* Push the video grid to the right of the sidebar */
-    width: calc(100% - 220px); /* Take the remaining space */
-    overflow-y: scroll; /* Allow scrolling */
-    overflow-x: hidden;
-    scrollbar-width: thin;
-}
+    /* width: calc(100% - 220px); Take the remaining space */
+    /* overflow-y: scroll; Allow scrolling */
+    /* overflow-x: hidden; */
+    /* scrollbar-width: thin; */
+/* } */ 
 .thumbnail::before{
     content: attr(data-duration);
     position: absolute;
