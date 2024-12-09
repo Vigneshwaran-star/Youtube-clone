@@ -60,7 +60,10 @@ vertical-align: middle;
     cursor: pointer;
     
 }
-
+.menu-item{
+    padding: 5px;
+    border-radius: 5px;
+}
 .footer:hover{
     background-color: white;
 }
