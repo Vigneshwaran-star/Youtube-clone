@@ -221,15 +221,15 @@ overflow-x: hidden;
 .vidoes::-webkit-scrollbar-button{
     width: 20px;
 }
-.vidoes img{
+/* .vidoes img{
     height: 150px;
     width: 250px;
-}
-.video-bottom-section img{
+} */
+/* .video-bottom-section img{
     border-radius: 50%;
     width: 25px;
     height: 25px;
-}
+} */
 .video-bottom-section{
     display: flex;
     align-items: flex-start;
