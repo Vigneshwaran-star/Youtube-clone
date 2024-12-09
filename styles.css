@@ -75,15 +75,18 @@ vertical-align: middle;
 .footer:hover{
     background-color: white;
 }
-.checkbox:not(:checked)~.toggle-btn .home,
-.checkbox:not(:checked)~.toggle-btn .shorts,
-.checkbox:not(:checked)~.toggle-btn .subscriptions
-{
-    display: block;
-}
-.toggle-btn {
+/* .checkbox:not(:checked) ~ .toggle-btn .home,
+.checkbox:not(:checked) ~ .toggle-btn .shorts,
+.checkbox:not(:checked) ~ .toggle-btn .subscriptions,
+.checkbox:not(:checked) ~ .toggle-btn .playlists {
+    display: flex;
+    align-items: center;
+} */
+.checkbox:not(:checked)~.toggle-btn > div:not(.home):not(.shorts):not(.subscriptions):not(.playlists){
+    /* display: none; */
     position: fixed;
     top: 55px;
+    /* display: none; */
     display: flex;
     flex-direction: column; /* The container stays vertical */
     row-gap: 20px; /* Adds space between rows */
@@ -96,6 +99,27 @@ vertical-align: middle;
     /* border: .002px solid black; */
     scrollbar-width: thin;
 }
+
+.checkbox:checked ~ .toggle-btn > div {
+    display: flex;
+}
+.checkbox:checked~.toggle-btn {
+    position: fixed;
+    top: 55px;
+    /* display: none; */
+    display: flex;
+    flex-direction: column; /* The container stays vertical */
+    row-gap: 20px; /* Adds space between rows */
+    width: 200px;
+    height: 700px;
+    padding-right: 20px;
+    /* display: block; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: .002px solid black; */
+    scrollbar-width: thin;
+}
+
 .toggle-btn::-webkit-scrollbar {
     width: 100px;
   }
