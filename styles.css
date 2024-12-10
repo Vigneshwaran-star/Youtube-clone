@@ -24,23 +24,27 @@
     margin-top: 10px;
     left: 300px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     position: sticky;
     overflow: hidden;
     top: 0px;
     overflow-x: scroll;
     overflow-y: hidden;
+    align-items: baseline;
 }
 .recommendations:first-child{
     background-color: black;
     color: #f6f6f6 ;
 }
 .recommendations span{
-    display: inline;
-    flex-wrap: nowrap;
+    display: block;
+    align-items: center;
+    /* flex-wrap: nowrap; */
     border-radius: 5px;
-    gap: 10px;
-    /* padding: 10px; */
+    gap: 100px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding: 5px;
     background-color:rgb(232, 229, 229) ;
 }
 .recommendations::-webkit-scrollbar{
@@ -75,51 +79,29 @@ vertical-align: middle;
 .footer:hover{
     background-color: white;
 }
-/* .checkbox:not(:checked) ~ .toggle-btn .home,
-.checkbox:not(:checked) ~ .toggle-btn .shorts,
-.checkbox:not(:checked) ~ .toggle-btn .subscriptions,
-.checkbox:not(:checked) ~ .toggle-btn .playlists {
+
+.toggle-btn {
+    position: fixed;
+    top: 55px;
+    /* display: none; */
     display: flex;
-    align-items: center;
+    flex-direction: column; /* The container stays vertical */
+    row-gap: 20px; /* Adds space between rows */
+    width: 200px;
+    height: 700px;
+    padding-right: 20px;
+    /* display: block; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: .002px solid black; */
+    scrollbar-width: thin;
+}
+/* .small-sidebar{
+    width: 100px;
 } */
-.checkbox:not(:checked)~.toggle-btn > div:not(.home):not(.shorts):not(.subscriptions):not(.playlists){
-    /* display: none; */
-    position: fixed;
-    top: 55px;
-    /* display: none; */
-    display: flex;
-    flex-direction: column; /* The container stays vertical */
-    row-gap: 20px; /* Adds space between rows */
-    width: 200px;
-    height: 700px;
-    padding-right: 20px;
-    /* display: block; */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /* border: .002px solid black; */
-    scrollbar-width: thin;
-}
-
-.checkbox:checked ~ .toggle-btn > div {
-    display: flex;
-}
-.checkbox:checked~.toggle-btn {
-    position: fixed;
-    top: 55px;
-    /* display: none; */
-    display: flex;
-    flex-direction: column; /* The container stays vertical */
-    row-gap: 20px; /* Adds space between rows */
-    width: 200px;
-    height: 700px;
-    padding-right: 20px;
-    /* display: block; */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /* border: .002px solid black; */
-    scrollbar-width: thin;
-}
-
+/* .small-sidebar {
+    display: none;
+} */
 .toggle-btn::-webkit-scrollbar {
     width: 100px;
   }
@@ -244,7 +226,7 @@ cursor: pointer;
     width: 300px;
 }
  .vidoes { 
-    position:relative;
+    position:fixed;
     width: 1000px;
     height: 600px;
     margin-left: 250px; /* Push the video grid to the right of the sidebar */

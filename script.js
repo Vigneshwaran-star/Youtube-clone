@@ -1,6 +1,9 @@
-// const toggleMenu = document.querySelector('#check-box');
-// const menu = document.querySelector('.toggle-btn');
+// const MenuIcon = document.querySelector('#menu');
+// const sidebar = document.querySelector('.toggle-btn');
+// const home=document.querySelector(".home")
+// const subscription=document.querySelector(".subscription")
+// const shorts=document.querySelector(".shorts")
 
-// toggleMenu.addEventListener('change', () => {
-//     menu.style.display = toggleMenu.checked ? 'inline-block' : 'none';
-// });
+// MenuIcon.onclick=function(){
+//     sidebar.classList.toggle("small-sidebar")
+// }
